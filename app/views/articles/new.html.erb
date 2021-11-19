@@ -1,0 +1,25 @@
+<h1>New Article</h1>
+<%= render "form", article: @article %>
+
+<!--Let's update app/views/articles/new.html.erb to use the partial via render as done above-->
+<!--A partial's filename must be prefixed with an underscore, e.g. _form.html.erb. But when rendering, it is referenced without the underscore, e.g. render "form".-->
+
+<%#= form_with model: @article do |form| %>
+<!--<div>-->
+  <%#= form.label :title %>
+  <%#= form.text_field :title %>
+  <%#@article.errors.full_messages_for(:title).each do |message| %>
+<!--  <div><%#= message %></div>-->
+    <%# end %>
+<!--</div>-->
+
+<!--<div>-->
+  <%#= form.label :body %>
+  <%#= form.text_area :body %>
+<!--</div>-->
+
+<!--  <div>-->
+    <%#= form.submit %>
+<!--  </div>-->
+
+<%#end %>
